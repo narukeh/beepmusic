@@ -1,15 +1,17 @@
 #!/bin/sh
 . ./notes.sh
 takt=120
-takt_1=$((takt-(takt/4)*3))
-takt_2=$((takt-(takt/4)*2))
-takt_3=$((takt-(takt/4)))
-takt_4=$takt
-takt_5=$((takt+(takt/4)*1))
-takt_6=$((takt+(takt/4)*2))
-takt_7=$((takt+(takt/4)*3))
-takt_8=$((takt+(takt/4)*4))
+takt_25=$((takt-(takt/4)*3))
+takt_50=$((takt-(takt/4)*2))
+takt_75=$((takt-(takt/4)))
+takt_100=$takt
+takt_125=$((takt+(takt/4)*1))
+takt_150=$((takt+(takt/4)*2))
+takt_175=$((takt+(takt/4)*3))
+takt_200=$((takt+(takt/4)*4))
+takt_300=$((takt+(takt/4)*8))
 
+#https://www.hooktheory.com/theorytab/view/koji-kondo/super-mario-bros-overworld-theme
 busybox beep \
    -f $NOTE_A5 -l $takt \
 -n -f $NOTE_A5 -l $takt \
@@ -44,12 +46,12 @@ busybox beep \
 -n -f $NOTE_A4 -l $takt \
 -n -f $_______ -l $takt \
 -n -f $NOTE_G4 -l $takt \
--n -f $NOTE_E5 -l $takt_5 \
--n -f $NOTE_G5 -l $takt_5 \
+-n -f $NOTE_E5 -l $takt_125 \
+-n -f $NOTE_G5 -l $takt_125 \
 -n -f $NOTE_A5 -l $takt \
 -n -f $_______ -l $takt \
 -n -f $NOTE_F5 -l $takt \
--n -f $NOTE_G5 -l $takt_5 \
+-n -f $NOTE_G5 -l $takt_125 \
 -n -f $_______ -l $takt \
 -n -f $NOTE_E5 -l $takt \
 -n -f $_______ -l $takt \
@@ -75,8 +77,8 @@ busybox beep \
 -n -f $NOTE_A4 -l $takt \
 -n -f $_______ -l $takt \
 -n -f $NOTE_G4 -l $takt \
--n -f $NOTE_E5 -l $takt_5 \
--n -f $NOTE_G5 -l $takt_5 \
+-n -f $NOTE_E5 -l $takt_125 \
+-n -f $NOTE_G5 -l $takt_125 \
 -n -f $NOTE_A5 -l $takt \
 -n -f $_______ -l $takt \
 -n -f $NOTE_F5 -l $takt \

@@ -1,6 +1,7 @@
 #!/bin/sh
 . ./notes.sh
 
+#https://www.hooktheory.com/theorytab/view/alexander-alexandrov/soviet-national-anthem
 busybox beep \
    -f $NOTE_C5 -l 800 \
 -n -f $NOTE_G4 -l 600 \
